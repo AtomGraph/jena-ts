@@ -12,6 +12,11 @@ import { RDFDatatype } from '../../../datatypes/RDFDatatype';
 export class ResourceImpl extends RDFNodeImpl implements Resource
 {
 
+    constructor(n: Node, m: ModelCom)
+    {
+
+    }
+
     addLiteral(p: Property, o: boolean | Literal | number | RDFNode): Resource
     {
 

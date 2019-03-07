@@ -12,7 +12,7 @@ import { PrefixMapping } from '../../../shared/PrefixMapping';
 import { Model } from '../Model';
 import * as N3 from 'n3';
 
-export class ModelImpl implements Model
+export class ModelCom implements Model
 {
 
     private store: N3.N3Store = N3.Store();
