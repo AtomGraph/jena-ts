@@ -11,7 +11,7 @@ import { RDFDatatype } from '../../datatypes/RDFDatatype';
 export interface Resource extends RDFNode
 {
 
-    abort(): Resource;
+    //abort(): Resource;
 
     addLiteral(p: Property, o: boolean): Resource;
 
@@ -27,7 +27,7 @@ export interface Resource extends RDFNode
 
     addLiteral(p: Property, o: number): Resource;
 
-    addLiteral(p: Property, o: Object): Resource;
+    //addLiteral(p: Property, o: Object): Resource;
 
     addProperty(p: Property, o: RDFNode): Resource;
 

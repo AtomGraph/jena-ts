@@ -13,7 +13,7 @@ import { PrefixMapping } from '../../shared/PrefixMapping';
 export interface Model
 {
 
-    abort(): Model;
+    //abort(): Model;
 
     add(statements: Array<Statement>): Model;
 
@@ -21,7 +21,7 @@ export interface Model
 
     add(s: Statement): Model;
 
-    add(statements: Statement[]): Model;
+    //add(statements: Statement[]): Model;
 
     add(iter: StmtIterator): Model;
 
@@ -31,9 +31,9 @@ export interface Model
 
     clearNsPrefixMap(): Model;
 
-    close(): void;
+    //close(): void;
 
-    commit(): Model;
+    //commit(): Model;
 
     contains(s: Resource, p: Property): boolean;
 
@@ -57,7 +57,7 @@ export interface Model
 
     //createList(members: RDFNode... ): RDFList;
 
-    createLiteral(v: string, wellFormed: boolean): Literal;
+    //createLiteral(v: string, wellFormed: boolean): Literal;
 
     createLiteral(v: string, language: string): Literal;
 
@@ -89,7 +89,7 @@ export interface Model
 
     //executeInTxn(action: Runnable): void;
 
-    getAnyReifiedStatement(s: Statement): Resource;
+    //getAnyReifiedStatement(s: Statement): Resource;
 
     //getLock(): Lock;
 
@@ -97,7 +97,7 @@ export interface Model
 
     getProperty(s: Resource, p: Property, lang: string): Statement;
 
-    getProperty(nameSpace: string, localName: String): Property;
+    //getProperty(nameSpace: string, localName: String): Property;
 
     getRequiredProperty(s: Resource, p: Property): Statement;
 
@@ -115,7 +115,7 @@ export interface Model
 
     isIsomorphicWith(g: Model ): boolean;
 
-    isReified(s: Statement): boolean;
+    //isReified(s: Statement): boolean;
 
     //listNameSpaces(): NsIterator;
 
@@ -145,7 +145,7 @@ export interface Model
 
     listSubjectsWithProperty(p: Property, o: RDFNode): ResIterator;
 
-    notifyEvent(e: Object): Model;
+    //notifyEvent(e: Object): Model;
 
     //query(s: Selector): Model;
 
@@ -175,7 +175,7 @@ export interface Model
 
     removeAll(s: Resource, p: Property, r: RDFNode): Model;
 
-    removeAllReifications(s: Statement): void;
+    //removeAllReifications(s: Statement): void;
 
     removeNsPrefix(prefix: string): Model;
 
@@ -191,9 +191,9 @@ export interface Model
 
     size(): number;
 
-    supportsSetOperations(): boolean;
+    //supportsSetOperations(): boolean;
 
-    supportsTransactions(): boolean;
+    //supportsTransactions(): boolean;
 
     union(model: Model): Model;
 

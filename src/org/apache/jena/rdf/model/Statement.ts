@@ -10,6 +10,8 @@ export interface Statement
 
     changeLiteralObject(o: boolean): Statement;
 
+    changeLiteralObject(o: number): Statement;
+
     //changeLiteralObject(o: char): Statement;
 
     //changeLiteralObject(o: double): Statement;
@@ -24,11 +26,11 @@ export interface Statement
 
     changeObject(o: string): Statement;
 
-    changeObject(o: string , wellFormed: boolean): Statement;
+    //changeObject(o: string , wellFormed: boolean): Statement;
 
     changeObject(o: string, l: string): Statement;
 
-    changeObject(o: string, l: string, wellFormed: boolean): Statement;
+    //changeObject(o: string, l: string, wellFormed: boolean): Statement;
 
     //createReifiedStatement(): ReifiedStatement;
 
@@ -88,12 +90,12 @@ export interface Statement
 
     hasWellFormedXML(): boolean;
 
-    isReified(): boolean;
+    //isReified(): boolean;
 
     //listReifiedStatements(): RSIterator;
 
     remove(): Statement;
 
-    removeReification(): void;
+    //removeReification(): void;
 
 }
